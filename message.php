@@ -17,7 +17,7 @@ if( !empty( $context ) ) {
 $postData['messages'][] = ['role' => 'user', 'content' => $_POST['message']];
 
 $ch = curl_init();
-$OPENAI_API_KEY = "sk-PXQ0A35RLCQaImgLujPST3blbkFJ2d7Kaa9aJjUqzvYwwkqd";
+$OPENAI_API_KEY = "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";
 $headers  = [
     'Accept: application/json',
     'Content-Type: application/json',
@@ -28,7 +28,7 @@ $postData = json_encode($postData);
 
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-curl_setopt($ch, CURLOPT_URL, 'https://api.openai.com/v1/chat/completions');
+curl_setopt($ch, CURLOPT_URL, 'http://mm1.ltd/chatgpt.php');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_POST, 1);
