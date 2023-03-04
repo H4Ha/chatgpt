@@ -17,7 +17,7 @@ if( !empty( $context ) ) {
 $postData['messages'][] = ['role' => 'user', 'content' => $_POST['message']];
 
 $ch = curl_init();
-$OPENAI_API_KEY = "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";
+$OPENAI_API_KEY = "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";
 $headers  = [
     'Accept: application/json',
     'Content-Type: application/json',
